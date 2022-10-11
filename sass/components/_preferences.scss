@@ -1,0 +1,43 @@
+
+.pref-section {
+    padding-top: 94px;
+  }
+ 
+  .section-title {
+    color: $title-text-color;
+  
+    @include font-params(36px, 1.17);   
+    font-weight: 700;
+    text-align: center;
+  } 
+
+  .pref-container {
+    display: flex;
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+    background-color: $primary-white-color;
+  }
+    &__thumb {
+    width: 270px;
+    height: 120px;
+    background-color: $light-grey-background;
+    border-radius: 4px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+  }
+  
+    &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+    &__title {
+    color: $title-text-color;
+  
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  }    
+ 

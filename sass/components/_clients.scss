@@ -1,0 +1,29 @@
+  /* Clients Section */
+  
+  .clients-container {
+   
+    @extend %centered-flex;
+    gap: 30px;
+  }
+  .client-link {
+   
+    @extend %centered-flex;
+    width: 170px;
+    height: 92px;
+    
+  
+    fill: #afb1b8;
+    padding: 16px 32px;
+    background-color: $primary-white-color;
+    border-radius: 4px;
+    border: 1px solid rgba(175, 177, 184, 1);
+  
+    transition: fill $transition-duration $function,
+      border-color $transition-duration $function;
+  }
+  
+  .client-link:hover,
+  .client-link:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
